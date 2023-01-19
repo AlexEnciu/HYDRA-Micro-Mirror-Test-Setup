@@ -1,6 +1,7 @@
 import tkinter as tk
 import serial
 from tkinter import ttk
+from ttkthemes import ThemedTk
 import cv2
 import time
 import os
@@ -140,7 +141,9 @@ def on_exit():
 
 
 
-root = tk.Tk()
+#root = tk.Tk()
+root = ThemedTk(theme='blue')
+print(root.get_themes())
 root.title("Micro Mirror Test Software")
 root.geometry("350x150")
 
